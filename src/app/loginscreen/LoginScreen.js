@@ -1,6 +1,7 @@
 import Image from "next/image";
 import user from "/public/Profile.svg";
 import imgTmp from "/public/agricultor.jpg";
+import Link from "next/link";
 
 export default function LoginScreen() {
   return (
@@ -8,9 +9,9 @@ export default function LoginScreen() {
       <div className="flex w-full max-w-[1160px] justify-between items-center">
         <div className="max-w-[380px] w-full mr-32">
           <h1 className="text-black text-[48px] font-bold">
-            A melhor forma de se{" "}
-            <span className="text-[#35B276]">informar.</span> Faça parte do{" "}
-            <span className="text-[#35B276]">círculo!</span>
+            A melhor forma de se
+            <span className="text-[#35B276]"> informar.</span> Faça parte do
+            <span className="text-[#35B276]"> círculo!</span>
           </h1>
           <p className="text-black text-[20px]">
             Venha conhecer a forma mais rápida de savber tudo o que acontece no
@@ -28,33 +29,36 @@ export default function LoginScreen() {
             <form className="flex flex-col w-full max-w-[310px]">
               <label className="text-black text-[10px]">E-mail</label>
               <input
-                className="mb-4 border py-2 px-2 text-[10px] rounded-[8px]"
+                className="mb-4 border py-2 px-2 text-[10px] rounded-[8px] text-black"
                 type="email"
                 placeholder="example@gmail.com"
               />
               <label className="text-black text-[10px]">Password</label>
               <input
-                className="border py-2 px-2 text-[10px] rounded-[8px] mb-5"
+                className="border py-2 px-2 text-[10px] rounded-[8px] mb-5 text-black"
                 type="password"
-                placeholder="*******"
+                placeholder="********"
               />
               <div className="w-full flex justify-end mb-5">
-                <a
+                <Link
                   className="text-green-400 text-[10px] underline justify-"
                   href=""
                 >
                   Esqueceu a senha?
-                </a>
+                </Link>
               </div>
-              <button className="bg-green-400 rounded-[8px] py-2 mb-5">
+              <input className="bg-green-400 rounded-[8px] py-2 mb-5"
+                type="submit"
+                value="Entrar"
+              />
+              {/* <button className="bg-green-400 rounded-[8px] py-2 mb-5">
                 Entrar
-              </button>
+              </button> */}
             </form>
             <div>
-              <p></p>
               <p className="text-black text-[10px]">
                 Não tem uma conta?
-                <a className="text-green-400">Clique aqui e crie uma!</a>
+                <Link className="text-green-400" href="/create_account"> Clique aqui e crie uma!</Link>
               </p>
             </div>
           </div>

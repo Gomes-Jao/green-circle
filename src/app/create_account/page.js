@@ -1,9 +1,9 @@
-import LoginScreen from "./loginscreen/LoginScreen";
+import CreateAccount from "./CreateAccount";
 
 export default function Home() {
   return (
     <main className="main">
-      <LoginScreen/>
+      <CreateAccount/>
     </main>
   );
 }
