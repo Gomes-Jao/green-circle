@@ -25,23 +25,23 @@ export default function LoginScreen() {
             src={user}
             alt="Imagem de perfil padrão" />
             <h2 className="text-black text-[28px] font-bold mb-4">Login</h2>
-            <p className="text-black text-[10px] mb-2">Bem-vindo de volta!</p>
+            <p className="text-black text-[14px] mb-2">Bem-vindo de volta!</p>
             <form className="flex flex-col w-full max-w-[310px]">
-              <label className="text-black text-[10px]">E-mail</label>
+              <label className="text-black text-[14px]">E-mail</label>
               <input
-                className="mb-4 border py-2 px-2 text-[10px] rounded-[8px] text-black"
+                className="mb-4 border py-2 px-2 text-[14px] rounded-[8px] text-black"
                 type="email"
                 placeholder="example@gmail.com"
               />
-              <label className="text-black text-[10px]">Password</label>
+              <label className="text-black text-[14px]">Password</label>
               <input
-                className="border py-2 px-2 text-[10px] rounded-[8px] mb-5 text-black"
+                className="border py-2 px-2 text-[14px] rounded-[8px] mb-5 text-black"
                 type="password"
                 placeholder="********"
               />
               <div className="w-full flex justify-end mb-5">
                 <Link
-                  className="text-green-400 text-[10px] underline justify-"
+                  className="text-green-400 text-[14px] underline justify-"
                   href=""
                 >
                   Esqueceu a senha?
@@ -56,7 +56,7 @@ export default function LoginScreen() {
               </button> */}
             </form>
             <div>
-              <p className="text-black text-[10px]">
+              <p className="text-black text-[14px]">
                 Não tem uma conta?
                 <Link className="text-green-400" href="/create_account"> Clique aqui e crie uma!</Link>
               </p>
