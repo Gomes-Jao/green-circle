@@ -47,7 +47,7 @@ export default function LoginScreen() {
                   Esqueceu a senha?
                 </Link>
               </div>
-              <input className="bg-green-400 rounded-[8px] py-2 mb-5"
+              <input className="bg-green-400 rounded-[8px] py-2 mb-5 text-white" 
                 type="submit"
                 value="Entrar"
               />
@@ -67,6 +67,7 @@ export default function LoginScreen() {
                 src={imgTmp}
                 width={400}
                 height={512}
+                alt="Imagem temporaria"
             />
           </div>
         </div>
